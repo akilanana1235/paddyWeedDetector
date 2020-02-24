@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/paddyWeedDetector.iml" filepath="$PROJECT_DIR$/.idea/paddyWeedDetector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/openCvImageProcessing.iml" filepath="$PROJECT_DIR$/.idea/openCvImageProcessing.iml" />
     </modules>
   </component>
 </project>
