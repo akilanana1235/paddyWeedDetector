@@ -1,0 +1,12 @@
+.container{
+    background-image: url("/assets/img/background2.jpg");
+    background-repeat:no-repeat;
+    
+}
+#label{
+    text-decoration-color: black;
+}
+.col s8 offSet-2{
+    position: relative;;
+    left:300px;
+}
