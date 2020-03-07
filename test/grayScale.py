@@ -7,7 +7,7 @@ import pickle
 file_list = []
 class_list = []
 
-DATADIR = "C:\\Users\\LEGION\\PycharmProject\\SDGP\\test\\Data_set\\set"
+DATADIR = "C:\\Users\\LEGION\\PycharmProject\\SDGP\\test\\Data_set\\train"
 CATEGORIES = ["weed", "paddy"]
 IMG_SIZE = 50
 
