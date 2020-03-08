@@ -39,6 +39,7 @@ model.add(Activation("relu"))
 
 # The output layer with 2 neurons, for 2 classes
 model.add(Dense(2))
+
 model.add(Activation("sigmoid"))
 
 # Compiling the model using some basic parameters

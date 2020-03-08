@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3efc2c4b-46de-420f-80e9-bca3c3d2c081" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PicsToGray.py" beforeDir="false" afterPath="$PROJECT_DIR$/PicsToGray.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/X.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/y.pickle" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +38,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.CNN2">
+  <component name="RunManager" selected="Python.CNN">
     <configuration name="CNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="paddyweeddetector" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,9 +107,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.CNN2" />
         <item itemvalue="Python.CNN" />
         <item itemvalue="Python.PicsToGray" />
+        <item itemvalue="Python.CNN2" />
       </list>
     </recent_temporary>
   </component>
@@ -131,6 +135,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583661250763">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1583661250763" />
+    <state x="548" y="174" key="FileChooserDialogImpl" timestamp="1583662190392">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="548" y="174" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1583662190392" />
+    <state width="1515" height="278" key="GridCell.Tab.0.bottom" timestamp="1583662226525">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="278" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1583662226525" />
+    <state width="1515" height="278" key="GridCell.Tab.0.center" timestamp="1583662226525">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="278" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1583662226525" />
+    <state width="1515" height="278" key="GridCell.Tab.0.left" timestamp="1583662226525">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="278" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1583662226525" />
+    <state width="1515" height="278" key="GridCell.Tab.0.right" timestamp="1583662226525">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="278" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1583662226525" />
     <state x="2381" y="182" key="SettingsEditor" timestamp="1583640894524">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

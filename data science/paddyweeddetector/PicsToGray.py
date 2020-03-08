@@ -7,7 +7,7 @@ import pickle
 file_list = []
 class_list = []
 
-DATADIR = "D:\iit\year 2\SDGP\weed detector\paddyWeedDetector\Data_set"
+DATADIR = "D:\iit\year 2\SDGP\weed detector\paddyWeedDetector\Data_set\datatrain"
 CATEGORIES = ["weed", "paddy"]
 IMG_SIZE = 50
 
@@ -42,7 +42,12 @@ for features, label in training_data:
 	y.append(label)
 
 #resize the image for easy access
+
+
+# X = numpy.array(X).reshape(-1, IMG_SIZE, IMG_SIZE, 1)
+
 X = numpy.array(X).reshape(-1, IMG_SIZE, IMG_SIZE, 1)
+y = numpy.array(y)
 
 # Creating the files containing all the information about the model
 #open pickle file only for write
