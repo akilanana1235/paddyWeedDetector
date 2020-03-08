@@ -13,6 +13,8 @@ def prepare(filepath):
 
 model = tf.keras.models.load_model("CNN.model")
 
-prediction = model.predict([prepare('D:\\paddyWeedDetector\\Data set\\validation\\weed\\weed01.jpg')])
+prediction = model.predict([prepare('D:\\paddyWeedDetector\\Data_set\\validation\\http___hasbrouck.asu.edu_imglib_seinet_DES_DES00071_DES00071576_lg.jpg')])
 print(prediction)  # will be a list in a list.
 print(CATEGORIES[int(prediction[0][0])])
+
+# D:\iit\year 2\SDGP\weed detector\paddyWeedDetector\Data_set\validation
