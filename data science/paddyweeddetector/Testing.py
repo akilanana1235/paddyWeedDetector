@@ -1,7 +1,7 @@
 import cv2
 import tensorflow as tf
 
-CATEGORIES = ["Dog", "Cat"]
+CATEGORIES = ["weed", "paddy"]
 
 
 def prepare(filepath):
@@ -13,6 +13,6 @@ def prepare(filepath):
 
 model = tf.keras.models.load_model("CNN.model")
 
-prediction = model.predict([prepare('doggo.jpg')])
+prediction = model.predict([prepare('D:\\paddyWeedDetector\\Data set\\validation\\weed\\weed01.jpg')])
 print(prediction)  # will be a list in a list.
 print(CATEGORIES[int(prediction[0][0])])
