@@ -61,5 +61,5 @@ for dense_layer in dense_layers:
 
             model.fit(X, y, batch_size=32, epochs=10, validation_split=0.3, callbacks=[tensorboard])
 
-            model.save('paddyWeedDetectionModelCNN.model')
+            # model.save('paddyWeedDetectionModelCNN.model')
 
