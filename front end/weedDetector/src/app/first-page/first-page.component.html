@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        <div class="container">
+            
+            
+                    <div class="card-panel teal lighten-2" >
+                        <h4 class="center white-text" style="text-align: center;">Paddy Weed Detector</h4>
+                    </div>
+                    <form #imageForm=ngForm>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" name="Caption" id="Caption">
+                                <label for="Caption" id="label">Caption</label>
+                            </div>
+                        </div>
+                        <img [src]="imageUrl"  style="width: 250px;height: 250px;" />
+                        <input type="file"  #image accept="image/*"  (change)="handleFileInput($event.target.files)">
+                        <button type="submit" class="btn-large btn-submit" [disabled]="image.value=='' || !imageForm.valid">Submit</button>
+                    </form>
+                
+        
+        </div>
+    </body>
+</html>
