@@ -11,5 +11,5 @@ def prepare(filepath):
 
 model = tf.keras.models.load_model("paddyWeedDetectionModelCNN.model")
 
-prediction = model.predict([prepare('9k_ (2).jpg')])  # REMEMBER YOU'RE PASSING A LIST OF THINGS YOU WISH TO PREDICT
+prediction = model.predict([prepare('https___static.inaturalist.org_photos_50345839_original.jpg')])  # PASSING A LIST OF THINGS YOU WISH TO PREDICT
 print(CATEGORIES[int(prediction[0][0])])
