@@ -1,22 +1,64 @@
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col s8 offSet-2">
-                <div class="card-panel teal lighten-2" >
-                    <h4 class="center white-text" style="text-align: center;">Paddy Weed Detector</h4>
+<html>
+    <head></head>
+    <body>
+        <div class="bgimage">
+            <div class="menu">
+                
+                <div class="leftmenu">
+                    <h4> PADDY WEED DETECTOR </h4>
                 </div>
-                <form #imageForm=ngForm>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input type="text" name="Caption" id="Caption">
-                            <label for="Caption" id="label">Caption</label>
-                        </div>
-                    </div>
+    
+                <div class="rightmenu">
+                    <ul>
+                        <li id="fisrtlist"> HOME </li>
+                        <li> Services </li>
+                        <li> Works</li>
+                        <li> Aboust us</li>
+                        <li>  Blogs </li>
+                        <li>contact</li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+            <div class="mat-typography">
+                <h5> DESIGN • DEVELOPMENT • BRANDING </h5>
+                <h1> EXPLORE THE PADDY WEED SOLUTIONS </h1>
+                <h4> WE ARE THE ONE OF THE WORLD’S TOP CREATIVE DESIGN AGENCIES </h4>
+                <button id="buttonone"> like share </button>
+                <button id="buttontwo"> Subscribe </button> 
+            </div>
+    
+        </div>   
+        <div class="container">
+            <form #imageForm=ngForm>
+                    <div class="mat-headline" style="text-align: center;">Insert the Image here</div>
                     <img [src]="imageUrl"  style="width: 250px;height: 250px;" />
                     <input type="file"  #image accept="image/*"  (change)="handleFileInput($event.target.files)">
-                    <button type="submit" class="btn-large btn-submit">Submit</button>
-                </form>
+                    <button  class="mat-raised-button" [disabled]="image.value=='' || !imageForm.valid">SUBMIT</button>
+            </form>
+        </div> 
+        <div class="empty">
+            <div class="mat-display-1">JOIN WITH US AND SAVE YOUR PADDY</div>
+        </div>
+        <mat-grid-list cols="2" rowHeight="fit" style="height: 300px; " gutterSize="20px">
+            <mat-grid-tile>text 1</mat-grid-tile>
+            <mat-grid-tile>text 2</mat-grid-tile>
+        </mat-grid-list> 
+        <div class="parallax">
+
+            <div style="height:300px;width:500px;background-color:rgba(0,0,0,0.5);font-size:20px;border:solid white;color: white;transform: translate(400px,100px);">
+               <div class="mat-display-1">About Us</div>
             </div>
         </div>
-    </div>
-</body>
+        <mat-grid-list cols="2"  rowHeight="fit" style="height: 300px; " gutterSize="20px">
+            <mat-grid-tile>text 1</mat-grid-tile>
+            <mat-grid-tile>text 2</mat-grid-tile>
+        </mat-grid-list> 
+        <div id="footer">
+            &copy homteq, 2020 - 115 New Cavendish Street, London, W1W 6UW, UK
+            <br>Tel: +442079115000
+        </div>
+            
+    </body>  
+</html>
