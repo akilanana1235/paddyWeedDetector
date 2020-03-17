@@ -1,0 +1,8 @@
+http://localhost:6006/#scalars&runSelectionState=eyIgcGFkZHktdnMtd2VlZC1DTk4tMTU4MzY3NzQ3M1xcdHJhaW4iOmZhbHNlLCJwYWRkeS12cy13ZWVkLUNOTi0xNTgzNjc2MzA1XFx0cmFpbiI6ZmFsc2UsInBhZGR5LXZzLXdlZWQtQ05OLTE1ODM2NzYzMDVcXHZhbGlkYXRpb24iOmZhbHNlLCJwYWRkeS12cy13ZWVkLUNOTi0xNTgzNjc2MTQ3XFx2YWxpZGF0aW9uIjpmYWxzZSwicGFkZHktdnMtd2VlZC1DTk4tMTU4MzY3NjE0N1xcdHJhaW4iOmZhbHNlfQ%3D%3D&run=%20paddy-vs-weed-CNN-1583677473%5Ctrain&tagFilter=%5Cw
+
+
+activate tensorflow
+
+tensorboard --logdir=D:\iit\year 2\SDGP\weed detector\paddyWeedDetector\akila python tensor flow testing\paddyWeedSoftware
+
+tensorboard --logdir=logs/
