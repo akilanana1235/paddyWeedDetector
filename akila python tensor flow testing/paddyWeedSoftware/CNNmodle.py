@@ -8,6 +8,7 @@ from tensorflow.keras.callbacks import TensorBoard
 import pickle
 import time
 
+
 # NAME = "paddy-vs-weed-CNN-{}".format(int(time.time()))
 
 

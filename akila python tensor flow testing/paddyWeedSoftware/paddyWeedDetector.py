@@ -11,5 +11,5 @@ def prepare(filepath):
 
 model = tf.keras.models.load_model("paddyWeedDetectionModelCNN.model")
 
-prediction = model.predict([prepare('images - 2020-03-08T091920.352.jpg')])  # PASSING A LIST OF THINGS YOU WISH TO PREDICT
+prediction = model.predict([prepare('weed.jpg')])  # PASSING A LIST OF THINGS YOU WISH TO PREDICT
 print(CATEGORIES[int(prediction[0][0])])
