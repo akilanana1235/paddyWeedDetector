@@ -70,7 +70,7 @@
 	background-size: 100% 110%;
 	width: 100%;
     height: 100vh;
-    opacity: 0.9;
+    
 }
 
 .menu{
@@ -216,13 +216,14 @@
     background-image: url("/assets/img/paddy1.jpg");
   
     /* Set a specific height */
-    min-height:500px; 
+    min-height:300px; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.85;
   }
  
   mat-grid-tile{
@@ -235,3 +236,58 @@
       color: teal;
       text-align: center;
   }
+
+  #footer{
+
+	width: 100%;
+	height: 100px;
+	background-color: rgb(0, 0, 0);
+}
+
+.lfooterleft{
+	width: 20%;
+	line-height: 50px;
+	float: left;
+/*	background-color: yellow;*/
+}
+
+.footerleft h4{
+	padding-left: 70px;
+	font-weight: bold;
+	color: white;
+	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.footerright{
+	width:70%;
+	height: 100px;
+	float: right;
+/*	background-color: red; */
+}
+
+.footerright ul{
+	margin-left: 200px;
+}
+
+.footerright ul li {
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	list-style: none;
+	font-size: 15px;
+	color:white;
+	font-weight: bold;
+	line-height: 100px;
+	margin-left: 40px;
+	text-transform: uppercase;
+
+}
+
+#fisrtlist{
+	color: orange;
+}
+
+.rightmenu ul li:hover{
+	color: orange;
+}
