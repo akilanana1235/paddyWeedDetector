@@ -15,9 +15,10 @@ X = X/255.0
 
 # Building the model
 model = Sequential()
+
 # 3 convolutional layers
 model.add(Conv2D(64, (3, 3), input_shape = X.shape[1:]))
-model.add(Activation("relu"))
+model.add(Activation("relu")) 	 #Rectified Linear Unit (0,1)
 model.add(MaxPooling2D(pool_size=(2,2)))
 
 model.add(Conv2D(64, (3, 3)))
@@ -32,7 +33,7 @@ model.add(Dropout(0.25))
 # 2 hidden layers
 model.add(Flatten()) #Flattening transforms a two-dimensional matrix of features into a vector that can be fed into a fully connected neural network classifier.
 model.add(Dense(128))
-model.add(Activation("relu"))#rectified linear unit
+model.add(Activation("relu"))#activation function(rectified linear unit)
 
 model.add(Dense(128))
 model.add(Activation("relu"))
@@ -40,7 +41,7 @@ model.add(Activation("relu"))
 # The output layer with 2 neurons, for 2 classes
 model.add(Dense(2))
 
-model.add(Activation("sigmoid"))
+model.add(Activation("sigmoid")) #activation function
 
 # Compiling the model using some basic parameters
 model.compile(loss="binary_crossentropy",

@@ -67,6 +67,7 @@
               <img [src]="imageUrl"  style="width: 250px;height: 250px;" />
               <input type="file"  #image accept="image/*"  (change)="handleFileInput($event.target.files)">
               <button  class="mat-raised-button" [disabled]="image.value=='' || !imageForm.valid">SUBMIT</button>
+              <button  class="mat-raised-button" [disabled]="image.value=='' || !imageForm.valid">REMOVE</button>
           </form>
         </div>
         
@@ -181,9 +182,19 @@
                   </div>
               </div>
           </div>
+<<<<<<< HEAD
           <div class="footer_bg">
               <div class="footer_bg_one"></div>
               <div class="footer_bg_two"></div>
+=======
+          <div class="footerright">
+              <ul>
+                  <li id="fisrtlist"><a href=""> Contact us</a></li>
+                  <li> <a href="">About us</a></li>
+                  <li> <a href="">Team Members</a></li>
+                  <li><a href="">Sign Up</a></li>
+              </ul>
+>>>>>>> ff5d751524a79c0f1e97dc6ac409bf0bb818ee98
           </div>
       </div>
       <div class="footer_bottom">

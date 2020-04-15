@@ -11,7 +11,7 @@ DATADIR = "D:\iit\year 2\SDGP\weed detector\paddyWeedDetector\Data_set\datatrain
 CATEGORIES = ["weed", "paddy"]
 IMG_SIZE = 50
 
-for category in CATEGORIES :
+for category in CATEGORIES : #each in CATERGORIES
 	path = os.path.join(DATADIR, category)
 	for img in os.listdir(path):
 		img_array = cv2.imread(os.path.join(path, img), cv2.IMREAD_GRAYSCALE) #reading the image and converting the image into gray scale
@@ -26,13 +26,13 @@ def create_training_data():
 			try :
 				img_array = cv2.imread(os.path.join(path, img), cv2.IMREAD_GRAYSCALE)
 				new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
-				training_data.append([new_array, class_num])
+				training_data.append([new_array, class_num]) #add to the array
 			except Exception as e:
 				pass
 
 create_training_data()
 
-random.shuffle(training_data) #shuffle to reduce the time
+random.shuffle(training_data) #shuffling to reduce the time taken to process
 
 X = [] #features
 y = [] #labels
@@ -42,7 +42,6 @@ for features, label in training_data:
 	y.append(label)
 
 #resize the image for easy access
-
 
 # X = numpy.array(X).reshape(-1, IMG_SIZE, IMG_SIZE, 1)
 
