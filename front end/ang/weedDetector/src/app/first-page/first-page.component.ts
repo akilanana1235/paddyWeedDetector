@@ -25,5 +25,6 @@ export class FirstPageComponent implements OnInit {
     reader.readAsDataURL(this.fileToUpload);
   }
 
+  
 
 }
