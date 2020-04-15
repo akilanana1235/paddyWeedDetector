@@ -67,7 +67,7 @@
               <img [src]="imageUrl"  style="width: 250px;height: 250px;" />
               <input type="file"  #image accept="image/*"  (change)="handleFileInput($event.target.files)">
               <button  class="mat-raised-button" [disabled]="image.value=='' || !imageForm.valid">SUBMIT</button>
-              <button  class="mat-raised-button" [disabled]="image.value=='' || !imageForm.valid">REMOVE</button>
+              <button  class="mat-raised-button" [disabled]="image.value=='' || !imageForm.valid" type="reset">REMOVE</button>
           </form>
         </div>
         
@@ -78,7 +78,7 @@
           <div class="card" style="background-color: rgb(233, 231, 229);">
             <img src="/assets/img/weedicide.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title"><b>Weeds in Paddy</b></h5>
+              <h5 class="card-title" style="color: black;"><b>Weeds in Paddy</b></h5>
               <p class="card-text">Weed flora varies from place to place due to type of rice culture, soil type hydrology, tillage, cultural practices and irrigation pattern etc.<br/></p>
               <p>More than 70 species - grasses,<br/>
                 More than 50 species - sedges,<br/>
@@ -93,18 +93,18 @@
           <div class="card" style="background-color: rgb(233, 231, 229);">
             <img src="/assets/img/paddy3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title"><b>Capturing the paddy</b></h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title" style="color: black;"><b>Image Processing</b></h5>
+              <p class="card-text">Pre-processing is a typical name for activities with pictures at the most reduced degree of reflection — both information and yield are power pictures. These notable pictures are of a similar kind as the first information caught by the sensor, with an intensity picture generally spoke to by a grid of picture work esteems. The point of pre-processing is an improvement of the picture information that stifles reluctant twists or upgrades some picture highlights significant for additional handling, albeit geometric changes of pictures are grouped among pre-processing strategies here since comparable systems are utilized. There are several kind of image pre-processing techniques. </p>
             </div>
             <div class="card-footer">
               <small class="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
           <div class="card" style="background-color: rgb(233, 231, 229);">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="/assets/img/weed.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <h5 class="card-title" style="color: black;"><b>Recent Problems</b></h5>
+              <p class="card-text">In our paddy fields, farmers use so much of weedicides in order to control weeds. People get diseases from using extra amount of weedicides and also using extra amount of weedicides generate huge environment pollution. Normally farmers use weedicides to the whole field without concerning only the weed grown areas because they don’t know the exact places where the weeds are, and the weeds are not easy to recognize by farmers in a large paddy field. Our problem is to find a solution to reduce this massive weedicide usage. </p>
             </div>
             <div class="card-footer">
               <small class="text-muted">Last updated 3 mins ago</small>
@@ -116,10 +116,11 @@
             
         </div>
         <a name="about">
-        <div class="card border-success mb-3" style="max-width: 100%; text-align: center;">
-          <div class="card-header"><h2>About Us</h2></div>
-          <div class="card-body text-dark">
-            <p class="card-text">Using this web application, you are able to detect paddy weed easily. Just insert the image above and defferentiate the weed from paddy. this may help ou to reduce weedicides and have a huge effective products.</p>
+        <div class="card border-success mb-3" style="max-width: 100%; text-align:center; padding-top: 2%;">
+          <div class="card-header" ><h2 style="color: black; text-align:center; ">About Us</h2></div>
+          <div class="card-body text-dark" style="text-align:left">
+            <p class="card-text">Using this web application, you are able to detect paddy weed easily. Just insert the image above and defferentiate the weed from paddy. this may help ou to reduce the usage of weedicides and you can have a huge effective product. </p>
+            <p>This means even though we grow crops to feed people it should not be an affect the people’s health. Our problem is based on weed plants which are grown in paddy fields in Sri Lanka. As an agricultural country, there are so many paddy fields in our country which provides our main food, rice to us. Bellow table shows the average amount of harvested rice paddy from the “Maha Kanna”. </p>
           </div>
         </div>
       </a>  
@@ -182,19 +183,9 @@
                   </div>
               </div>
           </div>
-<<<<<<< HEAD
           <div class="footer_bg">
               <div class="footer_bg_one"></div>
               <div class="footer_bg_two"></div>
-=======
-          <div class="footerright">
-              <ul>
-                  <li id="fisrtlist"><a href=""> Contact us</a></li>
-                  <li> <a href="">About us</a></li>
-                  <li> <a href="">Team Members</a></li>
-                  <li><a href="">Sign Up</a></li>
-              </ul>
->>>>>>> ff5d751524a79c0f1e97dc6ac409bf0bb818ee98
           </div>
       </div>
       <div class="footer_bottom">
