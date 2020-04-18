@@ -25,6 +25,15 @@ export class FirstPageComponent implements OnInit {
     reader.readAsDataURL(this.fileToUpload);
   }
 
-  
+  isShown: boolean = false ; // hidden by default
+
+
+toggleShow() {
+
+this.isShown = ! this.isShown;
 
 }
+
+}
+
+

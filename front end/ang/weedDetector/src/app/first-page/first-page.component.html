@@ -19,20 +19,24 @@
                     <li class="nav-item active">
                       <a class="nav-link" href="#">HOME </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                       <a class="nav-link" href="#about">ABOUT US</a>
+                      
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">CONTACT</a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CONTACT</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">No.57, Ramakrishna Rd,Colombo 06.<br>0722727272<br>01123602012</a>
+                        
+                      </div>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         WEEDICIDES
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Butachlor 50 EC<br>Thiobencorb 50 EC<br>Anilophos 18 EC</a>
+                        
                       </div>
                     </li>
                   </ul>
@@ -40,18 +44,58 @@
             
             
                 <form class="form-inline" >
-                  <button class="btn btn-outline-success" type="button" style="text-align: right; float:right;">Sign Up</button>
+                  
+                  <button class="btn btn-outline-success" type="button"  (click)="toggleShow()">Sign Up</button>
                   
                 </form>
               
               </nav>
-              
+              <!...................sign up........................>
+
+              <div *ngIf="isShown" class="row container-fluid"  id="divshow" style="color: black; background-color: white;" >
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">City</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    
+                    <div class="form-group col-md-2">
+                      <label for="inputZip">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+                
+              </div>
             <div class="mat-typography">
-                <h5> DESIGN • DEVELOPMENT • BRANDING </h5>
+                <h5> DETECT • DEVELOPMENT • PROTECT </h5>
                 <h1> EXPLORE THE PADDY WEED SOLUTIONS </h1>
                 <h4> WE ARE THE ONE OF THE WORLD’S TOP PADDY WEED DETECTORS </h4>
                 <button id="buttonone"> like share </button>
                 <button id="buttontwo"> Subscribe </button> 
+
+                
             </div>
             
     
@@ -76,7 +120,7 @@
         </div>
         <div class="card-deck">
           <div class="card" style="background-color: rgb(233, 231, 229);">
-            <img src="/assets/img/weedicide.jpg" class="card-img-top" alt="...">
+            <img src="/assets/img/weedicide.jpg" class="card-img-top" alt="..." style="height: 300px;">
             <div class="card-body">
               <h5 class="card-title" style="color: black;"><b>Weeds in Paddy</b></h5>
               <p class="card-text">Weed flora varies from place to place due to type of rice culture, soil type hydrology, tillage, cultural practices and irrigation pattern etc.<br/></p>
@@ -91,7 +135,7 @@
             </div>
           </div>
           <div class="card" style="background-color: rgb(233, 231, 229);">
-            <img src="/assets/img/paddy3.jpg" class="card-img-top" alt="...">
+            <img src="/assets/img/paddy3.jpg" class="card-img-top" alt="..." style="height: 300px;">
             <div class="card-body">
               <h5 class="card-title" style="color: black;"><b>Image Processing</b></h5>
               <p class="card-text">Pre-processing is a typical name for activities with pictures at the most reduced degree of reflection — both information and yield are power pictures. These notable pictures are of a similar kind as the first information caught by the sensor, with an intensity picture generally spoke to by a grid of picture work esteems. The point of pre-processing is an improvement of the picture information that stifles reluctant twists or upgrades some picture highlights significant for additional handling, albeit geometric changes of pictures are grouped among pre-processing strategies here since comparable systems are utilized. There are several kind of image pre-processing techniques. </p>
@@ -101,7 +145,7 @@
             </div>
           </div>
           <div class="card" style="background-color: rgb(233, 231, 229);">
-            <img src="/assets/img/weed.jpg" class="card-img-top" alt="...">
+            <img src="/assets/img/weed.jpg" class="card-img-top" alt="..." style="height: 300px;">
             <div class="card-body">
               <h5 class="card-title" style="color: black;"><b>Recent Problems</b></h5>
               <p class="card-text">In our paddy fields, farmers use so much of weedicides in order to control weeds. People get diseases from using extra amount of weedicides and also using extra amount of weedicides generate huge environment pollution. Normally farmers use weedicides to the whole field without concerning only the weed grown areas because they don’t know the exact places where the weeds are, and the weeds are not easy to recognize by farmers in a large paddy field. Our problem is to find a solution to reduce this massive weedicide usage. </p>
@@ -112,7 +156,7 @@
           </div>
         </div>
         
-        <div class="parallax">
+        <div class="parallax" style="padding-top: 10%; padding-bottom: 5%;">
             
         </div>
         <a name="about">
@@ -134,7 +178,7 @@
                   <div class="col-lg-3 col-md-6">
                       <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                           <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                          <p>Don’t miss any updates of our new templates and extensions.!</p>
+                          <p>Don’t miss any updates of our new techniques and extensions.!</p>
                           <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
                               <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
                               <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
