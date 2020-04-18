@@ -9,6 +9,7 @@
   "author": "Akila Nanayakkara",
   "license": "ISC",
   "dependencies": {
+    "@tensorflow/tfjs": "^1.7.2",
     "express": "latest"
   }
 }

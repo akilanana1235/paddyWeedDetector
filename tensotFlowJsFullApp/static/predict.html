@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>hello world</h1>
-</body>
+    <link
+      rel="stylesheet"
+      href="http://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container mt-5">
+          <div class="row">
+              <div class="col-12">
+                  <div class="progress progress-bar progress-bar-striped progress-bar-animated mb-2">Loading Model</div> 
+              </div>
+          </div>
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="file"
+              id="image-selector"
+              class="form-control border-0"
+            />
+          </div>
+          <div class="col-6">
+            <button id="predict-button" class="btn btn-dark float-right">
+              Predict
+            </button>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">
+            <h2 class="ml-3">Predictions</h2>
+            <ol id="prediction-list"></ol>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <h2 class="ml-3"></h2>
+            <img src="" alt="" id="selected-image" class="ml-3" />
+          </div>
+        </div>
+      </div>
+    </main>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7"></script>
+<script src="imagement-classes.js"></script>
+<script src="predict.js"></script>
+
+  </body>
 </html>
