@@ -105,8 +105,16 @@
 	width: 150px;
 	font-family: 'Montserrat', sans-serif;
 	margin-top: 25px;
-	border: 3px solid white;
+    border: 3px solid white;
+    
 }
+#buttonone:hover{
+    background: rgb(252, 252, 154);
+}
+#buttontwo:hover{
+	background: rgb(252, 252, 154);
+}
+
 
 #buttontwo{
 
@@ -117,7 +125,8 @@
 	font-weight: bold;
 	line-height: 40px;
 	border: 3px solid white;
-	width: 150px;
+    width: 150px;
+    
 }
 /*.......................................form....................................*/
 
@@ -370,4 +379,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*************footer End*****************/
+
 
