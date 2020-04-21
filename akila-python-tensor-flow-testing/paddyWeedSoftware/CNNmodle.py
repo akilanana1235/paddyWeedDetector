@@ -7,6 +7,8 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D
 from tensorflow.keras.callbacks import TensorBoard
 import pickle
 import time
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 
 # NAME = "paddy-vs-weed-CNN-{}".format(int(time.time()))
@@ -62,7 +64,7 @@ for dense_layer in dense_layers:
 
             model.fit(X, y, batch_size=32, epochs=10, validation_split=0.3, callbacks=[tensorboard])
 
-            model.save('paddyWeedDetectionModelCNN.model')
+            #model.save('paddyWeedDetectionModelCNN.model')
 
-            model.save_weights('paddyWeedDetectorModel.h5')
+            model.save('paddyWeedDetectorModelWithArch.h5')
 

@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import os
 import cv2
 from tqdm import tqdm
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 DATADIR = "D:\iit\year 2\SDGP\weed detector\paddyWeedDetector\Data_set\datatrain" #path to the data set.
 CATEGORIES = ["paddy", "weed"]
