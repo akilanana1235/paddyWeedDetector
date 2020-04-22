@@ -23,10 +23,10 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('^$',views.index, name="homepage"),
-    url('predictImage',views.predictImage, name='predictImage')
+    url('predictImage', views.predictImage, name='predictImage'),
 ]
 
-urlpatterns += static(settings.MEDIA_URL, document_ROOT = settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root  = settings.MEDIA_ROOT)
 
 
 
