@@ -11,7 +11,7 @@ def prepare(filepath):
     new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))  # resize image to match model's expected sizing
     return new_array.reshape(-1, IMG_SIZE, IMG_SIZE, 1)  # return the image with shaping that TF wants.
 
-model = tf.keras.models.load_model("paddyWeedDetectionModelCNN.model")
+model = tf.keras.models.load_model("paddyWeedDetectorModelWithArch.h5")
 
-prediction = model.predict([prepare('Paddy-field-Minamiuonuma-Japan.jpg')])  # PASSING A LIST OF THINGS YOU WISH TO PREDICT
+prediction = model.predict([prepare('IMG-20200321-WA0005.jpg')])  # PASSING A LIST OF THINGS YOU WISH TO PREDICT
 print(CATEGORIES[int(prediction[0][0])])

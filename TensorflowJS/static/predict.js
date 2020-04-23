@@ -9,16 +9,7 @@ $("#image-selector").change(function () {
   reader.readAsDataURL(file);
 });
 
-// let model;
-// const tf = require('@tensorflow/tfjs');
-// const tfnode = require('@tensorflow/tfjs-node');
-// (async function () {
-//     const handler = tfnode.io.fileSystem('http://localhost:81/tsf-models/1/model.json');
-//     const model = await tf.loadModel(handler);
-//     console.log("Model Loaded");
-//    const model = await tf.loadModel('http://localhost:81/tsf-models/1/model.json');
-//   $(".progress-bar").hide();
-// })();       
+      
 
 let model;
 (async function () {
