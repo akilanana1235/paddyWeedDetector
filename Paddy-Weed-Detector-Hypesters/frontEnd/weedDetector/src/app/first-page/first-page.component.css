@@ -1,0 +1,411 @@
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.topic{
+  padding-left: 210px;
+  font-size: 28px;
+
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+
+}
+
+.glow{
+  color: rgb(255, 255, 255);
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 10px rgba(0, 0, 0, 0), 0 0 10px #00000000, 0 0 10px #00000000, 0 0 10px #00000000, 0 0 10px #00000000, 0 0 10px #00000000;
+  }
+
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 10px #33ff00, 0 0 10px #33ff00, 0 0 10px #33ff00, 0 0 10px #33ff00, 0 0 10px #33ff00, 0 0 10px #33ff00;
+  }
+}
+
+.bgimage{
+	background-image: url('/assets/img/paddy.jpg');
+	background-size: 100% 110%;
+	width: 100%;
+    height: 100vh;
+
+}
+
+.menu{
+
+	width: 100%;
+	height: 100px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.leftmenu{
+	width: 20%;
+	line-height: 100px;
+	float: left;
+/*	background-color: yellow;*/
+}
+
+.leftmenu h4{
+	padding-left: 70px;
+	font-weight: bold;
+	color: white;
+	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.rightmenu{
+	width:70%;
+	height: 100px;
+	float: right;
+/*	background-color: red; */
+}
+
+.rightmenu ul{
+	margin-left: 200px;
+}
+
+.rightmenu ul li {
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	list-style: none;
+	font-size: 15px;
+	color:white;
+	font-weight: bold;
+	line-height: 100px;
+	margin-left: 40px;
+	text-transform: uppercase;
+
+}
+
+
+
+#fisrtlist{
+	color: orange;
+}
+
+.rightmenu ul li:hover{
+	color: orange;
+}
+
+
+.mat-typography{
+	width: 100%;
+	margin-top: 185px;
+	text-transform: uppercase;
+	text-align: center;
+	color:white;
+}
+
+.text h4{
+
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.text h1{
+	font-size:62px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700px;
+	margin:14px 0px;
+}
+
+.text h3{
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+#buttonone{
+	background-color: white;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 40px;
+	width: 150px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 25px;
+    border: 3px solid white;
+
+}
+#buttonone:hover{
+    background: rgb(252, 252, 154);
+}
+#buttontwo:hover{
+	background: rgb(252, 252, 154);
+}
+
+
+#buttontwo{
+
+	background-color: transparent;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 40px;
+	border: 3px solid white;
+    width: 150px;
+
+}
+/*.......................................form....................................*/
+
+#label{
+    text-decoration-color: black;
+}
+
+
+
+#footer{
+    background: #000000;;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+
+    }
+
+   .mat-raised-button{
+       width:100px;
+       height: 40px;
+   }
+
+   .parallax {
+    /* The image used */
+    background-image: url("/assets/img/paddy1.jpg");
+
+    /* Set a specific height */
+    min-height:300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+  }
+
+  mat-grid-tile{
+      background-color: rgb(233, 231, 229);
+      width:400px;
+  }
+  .empty{
+      padding-bottom: 20PX;
+      padding-top: 20PX;
+      color: teal;
+      text-align: center;
+  }
+
+
+/*..........................footer...........................*/
+.new_footer_area {
+	background: black;
+	color: white;
+}
+
+
+.new_footer_top {
+    padding: 100px 0px 270px;
+    position: relative;
+      overflow-x: hidden;
+}
+.new_footer_area .footer_bottom {
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: white;
+    padding: 20px 0px;
+}
+.new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: white;
+    margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+}
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+.btn_get:hover {
+    color: #fff;
+    background: #6754e2;
+    border-color: #6754e2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: #5e2ced;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+.new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+}
+.f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: white;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.ti-facebook:before {
+    content: "\e741";
+}
+.ti-twitter-alt:before {
+    content: "\e74b";
+}
+.ti-vimeo-alt:before {
+    content: "\e74a";
+}
+.ti-pinterest:before {
+    content: "\e731";
+}
+
+.btn_get_two {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
+}
+
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+
+.new_footer_top .f_social_icon a:hover {
+    background: #5e2ced;
+    border-color: #5e2ced;
+  color:white;
+}
+.new_footer_top .f_social_icon a + a {
+    margin-left: 4px;
+}
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: white;
+}
+.f_600 {
+    font-weight: 600;
+}
+.f_size_18 {
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+.new_footer_top .f_widget.about-widget .f_list li a {
+    color: white;
+}
+
+
+.new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url("http://droitthemes.com/html/saasland/img/seo/footer_bg.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+    background: url("/assets/img/tractor3.gif") no-repeat center center;
+    width: 300px;
+    height: 100px;
+  background-size:70%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+    background: url("https://1.bp.blogspot.com/-hjgfxUW1o1g/Xck--XOdlxI/AAAAAAAAT_4/JWYFJl83usgRFMvRfoKkSDGd--_Sv04UQCLcBGAsYHQ/s1600/cyclist.gif") no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+}
+
+
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*************footer End*****************/
+
+
