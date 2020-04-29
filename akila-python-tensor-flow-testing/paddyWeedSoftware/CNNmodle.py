@@ -34,11 +34,12 @@ for dense_layer in dense_layers:
             tensorboard = TensorBoard(log_dir='logs\ {}'.format(NAME))
             print(NAME)
 
+            #training the model
             model = Sequential()
 
-            model.add(Conv2D(layer_size, (3, 3), input_shape=X.shape[1:]))
-            model.add(Activation('relu'))
-            model.add(MaxPooling2D(pool_size=(2, 2)))
+            model.add(Conv2D(layer_size, (3, 3), input_shape=X.shape[1:])) #Convolutional layer
+            model.add(Activation('relu')) #activation layer
+            model.add(MaxPooling2D(pool_size=(2, 2))) #max pooling layer
 
             for l in range(conv_layer-1):
                 model.add(Conv2D(layer_size, (3, 3)))
@@ -51,7 +52,7 @@ for dense_layer in dense_layers:
             # model.add(Activation('relu'))
 
             for l in range(dense_layer):
-                model.add(Dense(512))
+                model.add(Dense(512)) #dense layer
                 model.add(Activation('relu'))
                 model.add(Dropout(0.2))
 
@@ -62,7 +63,8 @@ for dense_layer in dense_layers:
                           optimizer='adam',
                           metrics=['accuracy'])
 
-            model.fit(X, y, batch_size=32, epochs=10, validation_split=0.3, callbacks=[tensorboard])
+            #how many items per round
+            model.fit(X, y, batch_size=30, epochs=10, validation_split=0.3, callbacks=[tensorboard])
 
             #model.save('paddyWeedDetectionModelCNN.model')
 
