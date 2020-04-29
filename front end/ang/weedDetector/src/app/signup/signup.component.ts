@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup, FormBuilder, Validators} from '@angular/forms';
-import { Router } from '@angular/router';
+import { User } from '../user';
+import {EnrollmentService} from '../enrollment.service';
+
 
 @Component({
   selector: 'app-signup',
@@ -8,35 +9,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  signUpForm:FormGroup;
-  invalidLogin:boolean=false;
-  constructor(private formBuilder:FormBuilder,private router:Router) { }
 
+  userModel = new User('Rob','rob@gmail.com',7555784325,'123rob');
+  
+  constructor(private _enrollmentService:EnrollmentService) { }
   ngOnInit() {
-    this.signUpForm=this.formBuilder.group({
-      inputUserName4: ['',Validators.compose([Validators.required])],
-      inputPassword4:['', Validators.required] ,
-      inputAddress:['', Validators.required] ,
-      inputAddress2:['', Validators.required] ,
-      inputCity:['', Validators.required] ,
-      inputZip:['', Validators.required] 
-    });
-
-}
-onSubmit(){
-  console.log(this.signUpForm.value);
-  if(this.signUpForm.invalid){
-    return;
+    this._enrollmentService.enroll(this.userModel)
+    .subscribe(
+      data => console.log('Success!',data),
+      error => console.error('Eror!',error)
+    )
   }
 
-  const signInData = {
-    userNameData:this.signUpForm.controls.inputUserName4.value,
-    passwordData:this.signUpForm.controls.inputPassword4.value,
-    addressData:this.signUpForm.controls.inputAddress.value,
-    addressData2:this.signUpForm.controls.inputAddress2.value,
-    cityData:this.signUpForm.controls.inputCity.value,
-    zipData:this.signUpForm.controls.inputZip.value
+  
+  onSubmit(){
+    
+    }
+
+    
   }
 
-}
-}

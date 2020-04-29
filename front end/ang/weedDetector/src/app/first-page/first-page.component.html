@@ -55,52 +55,7 @@
                 </form>
               
               </nav>
-              <!----------------------sign up--------------------->
-
-              <div *ngIf="isShown" class="row container-fluid"  id="divshow" style="color: black; background-color: white;" >
-                <form [formGroup] = "signUpForm" (ngSubmit)="onSubmit()">
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="inputUserName4">User Name</label>
-                      <input type="email" class="form-control" formControlName="inputUserName4" id="inputUserName4">
-                      <div class="error" *ngIf="signUpForm.controls['inputUserName4'].hasError('required') && signUpForm.controls['inputUserName4'].touched">Please enter User Name</div>
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputPassword4">Password</label>
-                      <input type="password" class="form-control" formControlName="inputPassword4" id="inputPassword4">
-                      <div class="error" *ngIf="signUpForm.controls['inputPassword4'].hasError('required') && signUpForm.controls['inputPassword4'].touched">Please enter Password</div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" formControlName="inputAddress" id="inputAddress" placeholder="1234 Main St">
-                    <div class="error" *ngIf="signUpForm.controls['inputAddress'].hasError('required') && signUpForm.controls['inputAddress'].touched">Please enter Address</div>
-
-                  </div>
-                  <div class="form-group">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" formControlName="inputAddress2" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                    <div class="error" *ngIf="signUpForm.controls['inputAddress2'].hasError('required') && signUpForm.controls['inputAddress2'].touched">Please enter Address 2</div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="inputCity">City</label>
-                      <input type="text" class="form-control" formControlName="inputCity"  id="inputCity">
-                      <div class="error" *ngIf="signUpForm.controls['inputCity'].hasError('required') && signUpForm.controls['inputCity'].touched">Please enter city</div>
-                    </div>
-                    
-                    <div class="form-group col-md-2">
-                      <label for="inputZip">Zip</label>
-                      <input type="text" class="form-control" formControlName="inputZip" id="inputZip">
-                      <div class="error" *ngIf="signUpForm.controls['inputZip'].hasError('required') && signUpForm.controls['inputZip'].touched">Please enter city zip</div>
-                    </div>
-                  </div>
-                  
-                  <button type="submit" class="btn btn-primary" [disabled]="signUpForm.invalid">Sign Up</button>
-                  <div *ngIf="invalidLogin" class="error"><div>Invalid details</div> </div>
-                </form>
-                
-              </div>
+              
             <div class="mat-typography">
                 <h5> DETECT • DEVELOPMENT • PROTECT </h5>
                 <h1> EXPLORE THE PADDY WEED SOLUTIONS </h1>

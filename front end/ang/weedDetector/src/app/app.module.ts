@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import {routing} from './app.routes';
 
+import {HttpClientModule} from '@angular/common/http';
+
 
 
 
@@ -28,7 +30,8 @@ import {routing} from './app.routes';
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
-    routing
+    routing,
+    HttpClientModule
    
   ],
   providers: [],
