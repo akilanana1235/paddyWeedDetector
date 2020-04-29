@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormBuilder, Validators} from '@angular/forms';
+import { HttpClient} from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,7 +11,9 @@ import { Router } from '@angular/router';
 export class SignupComponent implements OnInit {
   signUpForm:FormGroup;
   invalidLogin:boolean=false;
-  constructor(private formBuilder:FormBuilder,private router:Router) { }
+  constructor(private formBuilder:FormBuilder,private router:Router,private http:HttpClient) { 
+    
+  }
 
   ngOnInit() {
     this.signUpForm=this.formBuilder.group({
@@ -38,5 +41,6 @@ onSubmit(){
     zipData:this.signUpForm.controls.inputZip.value
   }
 
+  
 }
 }
