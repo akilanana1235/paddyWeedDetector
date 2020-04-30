@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-first-page',
   templateUrl: './first-page.component.html',
@@ -9,9 +11,17 @@ export class FirstPageComponent implements OnInit {
   imageUrl: String="/assets/img/insertImage.png";
   fileToUpload:File=null;
 
-  constructor() { }
+  
+
+  constructor() {
+    
+   }
 
   ngOnInit() {
+    
+  }
+
+  onSubmit(){
   }
 
   handleFileInput(file: FileList){
@@ -33,6 +43,7 @@ toggleShow() {
 this.isShown = ! this.isShown;
 
 }
+
 
 }
 
