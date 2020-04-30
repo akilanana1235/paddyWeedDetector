@@ -10,22 +10,22 @@ import {EnrollmentService} from '../enrollment.service';
 })
 export class SignupComponent implements OnInit {
 
-  userModel = new User('Rob','rob@gmail.com',7555784325,'123rob');
+  submitted=false;
+
+  userModel = new User('Rob','rob@gmail.com',7555784325,'rob123');
   
   constructor(private _enrollmentService:EnrollmentService) { }
-  ngOnInit() {
+  ngOnInit() { 
+  }
+
+  
+  onSubmit(){
+    this.submitted=true;
     this._enrollmentService.enroll(this.userModel)
     .subscribe(
       data => console.log('Success!',data),
       error => console.error('Eror!',error)
     )
-  }
-
-  
-  onSubmit(){
-    
     }
-
-    
   }
 

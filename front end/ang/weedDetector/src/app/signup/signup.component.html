@@ -47,7 +47,7 @@
 <!--------------------------sign up------------------------------------->
 <div class="container-fluid">
   <h1>Sign Up</h1>
-  <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+  <form #userForm="ngForm" *ngIf="!submitted" (ngSubmit)="onSubmit()" novalidate>
 
     <div class="form-group">
       <label>Name</label>
