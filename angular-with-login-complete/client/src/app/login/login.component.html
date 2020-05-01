@@ -1,0 +1,94 @@
+<style>
+body{
+  background-image: url('/assets/img/paddy2.jpg');
+  background-size: 100% 110%;
+  width: 100%;
+ height: 100vh; 
+}
+.container{
+  border: 3px solid;
+  padding-top: 10px;
+}
+</style>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="color: white;">
+  <div class="left">
+  <a class="navbar-brand" routerLink="/home"  style="font-family: 'Pacifico', cursive; padding-right: 30px;">WEED DETECTOR</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  </div>
+  
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home" >HOME </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#about">ABOUT US</a>
+        
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CONTACT</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">No.57, Ramakrishna Rd,Colombo 06.<br>0722727272<br>01123602012</a>
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          WEEDICIDES
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Butachlor 50 EC<br>Thiobencorb 50 EC<br>Anilophos 18 EC</a>
+          
+        </div>
+      </li>
+      <li *ngIf="!auth.isLoggedIn()" class="nav-item">
+        <a class="nav-link" routerLink="/login">Login</a>
+      </li>
+      <li *ngIf="!auth.isLoggedIn()" class="nav-item">
+        <a class="nav-link" routerLink="/register">Register</a>
+      </li>
+      <li *ngIf="auth.isLoggedIn()" class="nav-item">
+        <a class="nav-link" routerLink="/profile">{{ auth.getUserDetails()?.first_name }}</a>
+      </li>
+      <li *ngIf="auth.isLoggedIn()" class="nav-item">
+        <a class="nav-link" routerLink="" (click)="auth.logout()">Logout</a>
+      </li>
+      
+    </ul>
+  </div>
+
+
+  <form class="form-inline" >
+    <div>
+      <button class="btn btn-outline-success" type="button" routerLink="/register" >Sign Up</button>
+    </div>
+    <div style="padding-left: 8px;">
+      <button class="btn btn-outline-success" type="button" routerLink="/login" >LOGIN</button>
+    </div>
+    
+  </form>
+
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mt-5 mx-auto">
+      <form (submit)="login()">
+        <h1 class="h3 mb-3 font-weight-normal">PLEASE SIGN IN</h1>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" name="email" placeholder="Enter email" [(ngModel)]="credentials.email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="credentials.password">
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
