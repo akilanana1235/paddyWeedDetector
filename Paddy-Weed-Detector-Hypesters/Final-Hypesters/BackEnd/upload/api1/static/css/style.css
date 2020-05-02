@@ -71,6 +71,32 @@
 }
 
 
+.glow{
+  color: white;
+  text-align: center;
+  -webkit-animation: glow 5s ease-in-out infinite alternate;
+  -moz-animation: glow 5s ease-in-out infinite alternate;
+  animation: glow 5s ease-in-out infinite alternate;
+
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0), 0 0 20px rgba(255, 255, 255, 0), 0 0 30px #e6007300, 0 0 40px #e6007300, 0 0 50px #e6007300, 0 0 60px #e6007300, 0 0 70px #e6007300;
+  }
+
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 10px #00ff4c, 0 0 10px #00ff22, 0 0 10px #00ff22, 0 0 10px #00ff40, 0 0 10px #00ff40, 0 0 10px #00ff6a;
+  }
+}
+
+
+
+
+
+
+
 .mat-typography{
 	width: 100%;
 	margin-top: 185px;
@@ -111,6 +137,12 @@
 	border: 3px solid white;
 }
 
+.empty{
+background: linear-gradient(-45deg, #b8b8b8, #ebebeb, #a4ffac, #9c9c9c);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+
+}
 
 
 #buttontwo{
@@ -132,9 +164,26 @@
 	display:flex;
 	justify-content:center;
 	min-height:50vh;
-	background:#031321;
 	font-family:consolas;
+background: linear-gradient(-45deg, #b8b8b8, #ebebeb, #a4ffac, #9c9c9c);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 .neonbtn{
 	position:relative;
 	display:inline-block;
@@ -148,9 +197,7 @@
 	transition:0.5s;
 }
 .neonbtn:hover{
-	color:#2557784;
-	background:#2196f3;
-	box-shadow:0 0 10px #2196f3, 0 0 auto #2196f3, 0 0 30px #2196f3;
+
 
 }
 .parallax {

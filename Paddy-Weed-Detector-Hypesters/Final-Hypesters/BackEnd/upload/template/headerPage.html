@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
 
-     <title>Weed Detector</title>
-
+     <title>Paddy Weed Classifier | Model</title>
+     <link rel="icon" type="image/x-icon" href="{% static 'paddy-icon.png' %}">
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="description" content="">
@@ -14,6 +14,7 @@
 
 
      <link href="{% static 'css/style.css' %}" rel="stylesheet">
+     <script type="text/javascript" src="{% static 'js/exif.js' %}"></script>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
      <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" >
@@ -34,7 +35,7 @@
 
      <div class="bgimage" style="color: white;">
          
-          <nav class="navbar navbar-expand-lg navbar-light bg-light" style="color: white;">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="color: white;">
 
                <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
@@ -42,10 +43,22 @@
                     <a class="nav-link" href="http://127.0.0.1:8000/">HOME </a>
                   </li>
 
+                    <li class="nav-item ">
+            <a class="nav-link" href="#about">ABOUT US</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CONTACT</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">No.57, Ramakrishna Rd,Colombo 06.<br>0722727272<br>01123602012</a>
+            </div>
+          </li>
+
 
                   <li>
                     <div class="left">
-                      <a class="navbar-brand" href="#" style="font-family: 'Pacifico', cursive; padding-left: 210%; font-size: 25px;" >WEED DETECTOR</a>
+                      <a class="navbar-brand" href="http://127.0.0.1:8000/" style="font-family: 'Pacifico', cursive; padding-left: 85%; font-size: 25px;" ><p class="glow">PADDY WEED CLASSIFIER</p> </a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -62,45 +75,50 @@
 
               <form class="form-inline" >
 
-               <a href="#"><button class="btn btn-outline-success" type="button"  >Sign Up</button></a>
+               <a href="http://localhost:4200/#about"><button class="btn btn-outline-success" type="button"  > Log Out</button></a>
 
               </form>
 
-
-
-
-
             </nav>
-
-         
 
           <div class="mat-typography">
               <h5 class="change"> DETECT • DEVELOPMENT • PROTECT </h5>
               <h1> EXPLORE THE PADDY WEED SOLUTIONS </h1>
               <h4> WE ARE THE ONE OF THE WORLD’S TOP PADDY WEED DETECTORS </h4>
-              <button id="buttonone">like share </button>
-              <button id="buttontwo"> Subscribe </button> 
+              <button id="buttonone" style="color:black;">like share </button>
+              <button id="buttontwo"> Subscribe </button>
 
-              
+
           </div>
           
   
       </div>
 			 <!-- HOME -->
 		<div class="empty">
-			<h3 style="color:black;">JOIN WITH US AND SAVE YOUR PADDY</h3>
+			<h3 style="color:black; text-shadow: 1px 1px black; text-decoration: underline;">JOIN WITH US AND SAVE YOUR PADDY</h3>
 
 			<div class="card" id="insertcard">
 				<div class="card-body">
-					<a href="index.html" class="neonbtn">
-						Click here to Insert your Image
+					<a  class="neonbtn">
+
+                        <h4 style="color:red;">Please insert only paddy or weed image</h4>
+                        <h4 style="color:red;">because this is a image classifier not a detector!!!</h4>
+
                         {% block content%}
 
                         {% endblock %}
 					</a>
 				</div>
+                <h4>Example for, how image classification happens.</h4>
+                <img src="{%static 'tf.gif' %}"  alt="..." style="height: 250px; width: 270px;">
 			</div>
+
 		</div>
+
+     <div>
+
+
+     </div>
 		
 
 
@@ -151,7 +169,7 @@
           <div class="card-header" ><h2 style="color: black; text-align:center; ">About Us</h2></div>
           <div class="card-body text-dark" style="text-align:left">
             <p class="card-text">Using this web application, you are able to detect paddy weed easily. Just insert the image above and defferentiate the weed from paddy. this may help ou to reduce the usage of weedicides and you can have a huge effective product. </p>
-            <p>This means even though we grow crops to feed people it should not be an affect the people’s health. Our problem is based on weed plants which are grown in paddy fields in Sri Lanka. As an agricultural country, there are so many paddy fields in our country which provides our main food, rice to us. Bellow table shows the average amount of harvested rice paddy from the “Maha Kanna”. </p>
+            <p style="text-align: justify;">This means even though we grow crops to feed people it should not be an affect the people’s health. Our problem is based on weed plants which are grown in paddy fields in Sri Lanka. As an agricultural country, there are so many paddy fields in our country which provides our main food, rice to us. Bellow table shows the average amount of harvested rice paddy from the “Maha Kanna”. </p>
           </div>
         </div>
       </a>  
@@ -180,10 +198,10 @@
                       <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
                           <h3 class="f-title f_600 t_color f_size_18">Contact Us</h3>
                           <ul class="list-unstyled f_list">
-                              <li><a href="#">No.57, Ramakrishna Rd,Colombo 06.</a></li>
-                              <li><a href="#">0112-3602012</a></li>
-                              <li><a href="#">072-2727272</a></li>
-                              <li><a href="#">www.iit.ac.lk</a></li>
+                              <li><a >No.57, Ramakrishna Rd,Colombo 06.</a></li>
+                              <li><a >0112-3602012</a></li>
+                              <li><a >072-2727272</a></li>
+                              <li><a href="https://www.iit.ac.lk/" target="blank">www.iit.ac.lk</a></li>
                               
                           </ul>
                       </div>
@@ -192,12 +210,12 @@
                       <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
                           <h3 class="f-title f_600 t_color f_size_18">Team Members</h3>
                           <ul class="list-unstyled f_list">
-                              <li><a href="#">Akila Nanayakkara</a></li>
-                              <li><a href="#">Kisal Wedage</a></li>
-                              <li><a href="#">Amila Kelum</a></li>
-                              <li><a href="#">Moveen Wijerathne</a></li>
-                              <li><a href="#">Danushka Samarakone</a></li>
-                              <li><a href="#">Malshama Perera</a></li>
+                              <li><a href="https://www.facebook.com/profile.php?id=100006318334239"  target="blank">Akila Nanayakkara</a></li>
+                              <li><a href="https://www.facebook.com/wedagechandula" target="blank">Kisal Wedage  </a></li>
+                              <li><a href="https://www.facebook.com/amila.kelum.94" target="blank">Amila Kelum</a></li>
+                              <li><a href="https://www.facebook.com/moveen.wijerathne" target="blank">Moveen Wijerathne</a></li>
+                              <li><a href="https://www.facebook.com/danushka.samarakoon.96" target="blank">Danushka Samarakone</a></li>
+                              <li><a href="https://www.facebook.com/profile.php?id=100001848015132" target="blank">Malshama Perera</a></li>
                           </ul>
                       </div>
                   </div>

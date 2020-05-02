@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="http://127.0.0.1:8000/">HOME </a>
+            <a class="nav-link" href="http://localhost:4200/">HOME </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">ABOUT US</a>
@@ -61,39 +61,7 @@
     <!...................sign up........................>
 
       <div *ngIf="isShown" class="row container-fluid" id="divshow" style="color: black; background-color: white;">
-        <form>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" />
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4">Password</label>
-              <input type="password" class="form-control" id="inputPassword4" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
-          </div>
-          <div class="form-group">
-            <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity" />
-            </div>
 
-            <div class="form-group col-md-2">
-              <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip" />
-            </div>
-          </div>
-
-          <button type="submit" class="btn btn-primary">Sign Up</button>
-        </form>
       </div>
       <div class="mat-typography">
         <h5>DETECT • DEVELOPMENT • PROTECT</h5>
@@ -104,100 +72,21 @@
       </div>
   </div>
 
-  <div class="card">
+  <!-- <div class="card">
     <div class="card-body">
       <div class="mat-headline" style="text-align: center;">
         Insert the Image here
       </div>
     </div>
 
-    <form #imageForm="ngForm" style="text-align: center;">
+    <form #imageForm=ngForm style="text-align: center;">
 
-      <img [src]="imageUrl" style="width: 250px; height: 250px;"  />
-      <!-- <input type="file" #image accept="image/*" (change)="handleFileInput($event.target.files) " /> -->
-      <!-- <p id="pic-info"></p>
-      <p id="map-link"></p>
-
-
-
-       <script>
-
-        document.getElementById("the-img").onclick = function() {
-
-            EXIF.getData(this, function() {
-
-                myData = this;
-
-                console.log(myData.exifdata);
-
-                document.getElementById('pic-info').innerHTML = 'This photo was taken on ' + myData.exifdata.DateTime + ' with a ' + myData.exifdata.Make + ' ' + myData.exifdata.Model;
-
-                // Calculate latitude decimal
-                var latDegree = myData.exifdata.GPSLatitude[0].numerator;
-                var latMinute = myData.exifdata.GPSLatitude[1].numerator;
-                var latSecond = myData.exifdata.GPSLatitude[2].numerator;
-                var latDirection = myData.exifdata.GPSLatitudeRef;
-
-                var latFinal = ConvertDMSToDD(latDegree, latMinute, latSecond, latDirection);
-                console.log(latFinal);
-
-                // Calculate longitude decimal
-                var lonDegree = myData.exifdata.GPSLongitude[0].numerator;
-                var lonMinute = myData.exifdata.GPSLongitude[1].numerator;
-                var lonSecond = myData.exifdata.GPSLongitude[2].numerator;
-                var lonDirection = myData.exifdata.GPSLongitudeRef;
-
-                var lonFinal = ConvertDMSToDD(lonDegree, lonMinute, lonSecond, lonDirection);
-                console.log(lonFinal);
-
-                document.getElementById('map-link').innerHTML = '<a href="http://www.google.com/maps/place/'+latFinal+','+lonFinal+'" target="_blank">Google Maps</a>';
-
-            });
-        }
-
-
-
-        function ConvertDMSToDD(degrees, minutes, seconds, direction) {
-
-            var dd = degrees + (minutes/60) + (seconds/3600);
-
-            if (direction == "S" || direction == "W") {
-                dd = dd * -1;
-            }
-
-            return dd;
-        }
-
-    </script> -->
-
-      <label>
-        Cover:
-        <input type="file" (change)="onImageChanged($event)" />
-      </label>
-
-      <button (click)="newBook()" class="mat-raised-button">Submit</button>
-
-
-
-
-      <!-- <button class="mat-raised-button" [disabled]="image.value == '' || !imageForm.valid" type="reset">
-        REMOVE
-      </button> -->
+      <img [src]="imageUrl" style="width: 250px;height: 250px;" />
+      <input type="file" #image accept="image/*" (change)="handleFileInput($event.target.files)">
+      <button class="mat-raised-button" [disabled]="image.value=='' || !imageForm.valid">SUBMIT</button>
+      <button class="mat-raised-button" [disabled]="image.value=='' || !imageForm.valid" type="reset">REMOVE</button>
     </form>
-
-
-
-
-    <!-- <form #imageForm=ngForm style="text-align: center; " enctype="multipart/form-data">
-
-            <img [src]="imageUrl"  style="width: 250px;height: 250px;" />
-            <input type="file"  #image accept="image/*"  (change)="handleFileInput($event.target.files)">
-            <button  class="mat-raised-button" (click)='onSubmit(imageUrl)' [disabled]="image.value=='' || !imageForm.valid">SUBMIT</button>
-            <button  class="mat-raised-button" [disabled]="image.value=='' || !imageForm.valid" type="reset">REMOVE</button>
-        </form> -->
-
-
-  </div>
+  </div> -->
 
   <div class="empty">
     <div class="mat-display-1">JOIN WITH US AND SAVE YOUR PADDY</div>
