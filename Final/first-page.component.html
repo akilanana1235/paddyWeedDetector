@@ -1,0 +1,138 @@
+<html>
+    <head></head>
+    <body>
+        <div class="bgimage">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="color: white;">
+                <div class="left">
+                <a class="navbar-brand" href="#">PADDY WEED DETECTOR</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">HOME </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        WEEDICIDES
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            
+            
+                <form class="form-inline" >
+                  <button class="btn btn-outline-success" type="button" style="text-align: right; float:right;">Sign Up</button>
+                  
+                </form>
+              
+              </nav>
+              
+    
+            <div class="mat-typography">
+                <h5> DESIGN • DEVELOPMENT • BRANDING </h5>
+                <h1> EXPLORE THE PADDY WEED SOLUTIONS </h1>
+                <h4> WE ARE THE ONE OF THE WORLD’S TOP PADDY WEED DETECTORS </h4>
+                <button id="buttonone"> like share </button>
+                <button id="buttontwo"> Subscribe </button> 
+            </div>
+            
+    
+        </div>   
+        
+        <div class="card">
+          <div class="card-body">
+            <div class="mat-headline" style="text-align: center;">Insert the Image here</div>
+            <img [src]="imageUrl"/>
+          </div>
+          
+          <form [fromGroup]="form" (ngSubmit)="onSubmit()">
+              
+              <input type="file" name="FirstPage"  #image accept="image/*"  (change)="onChange($event.target.file)">
+              <button type="Submit" class="mat-raised-button" [disabled]="image.value=='' || !imageForm.valid">SUBMIT</button>
+          </form>
+        </div>
+        
+        <div class="empty"> 
+            <div class="mat-display-1">JOIN WITH US AND SAVE YOUR PADDY</div>
+        </div>
+        <div class="card-deck">
+          <div class="card" style="background-color: rgb(233, 231, 229);">
+            <img src="/assets/img/weedicide.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Weeds in Paddy</b></h5>
+              <p class="card-text">Weed flora varies from place to place due to type of rice culture, soil type hydrology, tillage, cultural practices and irrigation pattern etc.<br/></p>
+              <p>More than 70 species - grasses,<br/>
+                More than 50 species - sedges,<br/>
+                More than 20 species - broad leaves,<br/>
+                However 10-20 species may be considered as economically important in rice culture Grasses are considered as the major weed group in rice fields in Sri Lanka.</p>
+                <button type="button" class="btn btn-outline-info" style="align-items: center;">Learn More</button>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card" style="background-color: rgb(233, 231, 229);">
+            <img src="/assets/img/paddy3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Capturing the paddy</b></h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card" style="background-color: rgb(233, 231, 229);">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="parallax">
+            
+        </div>
+        <mat-grid-list cols="2"  rowHeight="fit" style="height: 300px; " gutterSize="20px">
+            <mat-grid-tile>text 1</mat-grid-tile>
+            <mat-grid-tile>text 2</mat-grid-tile>
+        </mat-grid-list> 
+        <div id="footer">
+          <div class="footerleft"  style="float: left;">
+              <h4> PADDY WEED DETECTOR </h4>
+          </div>
+          <div class="footerright">
+              <ul>
+                  <li id="fisrtlist"><a href=""> Contact us</a></li>
+                  <li> <a href="">Aboust us</a></li>
+                  <li> <a href="">Team Members</a></li>
+                  <li><a href="">Sign Up</a></li>
+              </ul>
+          </div>
+          <div>
+            @copyright 2020 All rights reserved
+          </div>
+          
+      </div>
+            
+    </body>  
+    
+</html>
