@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ae75559-1048-4ca0-b7ba-1ebed41388d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/.idea/Final-Data-Science-Model.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/03.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/African-Lovegrass-BuckleyEcologyLab.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/Capture.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/Capture2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/X.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/logs/ paddy-vs-weed-CNN-3-conv-128-nodes-2-dense-1588131814/events.out.tfevents.1588131815.MSI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/logs/ paddy-vs-weed-CNN-3-conv-128-nodes-2-dense-1588131814/events.out.tfevents.1588131817.MSI.profile-empty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/logs/ paddy-vs-weed-CNN-3-conv-128-nodes-2-dense-1588131814/plugins/profile/2020-04-29_09-13-37/local.trace" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/logs/ paddyweedCNN-3-conv-128-nodes-1-dense-1588138288/events.out.tfevents.1588138288.MSI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/logs/ paddyweedCNN-3-conv-128-nodes-1-dense-1588138288/events.out.tfevents.1588138290.MSI.profile-empty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/logs/ paddyweedCNN-3-conv-128-nodes-1-dense-1588138288/plugins/profile/2020-04-29_11-01-29/local.trace" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/logs/ paddyweedCNN-3-conv-128-nodes-2-dense-1588136573/events.out.tfevents.1588136574.MSI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/logs/ paddyweedCNN-3-conv-128-nodes-2-dense-1588136573/events.out.tfevents.1588136577.MSI.profile-empty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/logs/ paddyweedCNN-3-conv-128-nodes-2-dense-1588136573/plugins/profile/2020-04-29_10-32-57/local.trace" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/logs/ paddyweedCNN-3-conv-128-nodes-2-dense-1588142116/events.out.tfevents.1588142117.MSI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/logs/ paddyweedCNN-3-conv-128-nodes-2-dense-1588142116/events.out.tfevents.1588142117.MSI.profile-empty" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/logs/ paddyweedCNN-3-conv-128-nodes-2-dense-1588142116/plugins/profile/2020-04-29_12-05-17/local.trace" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/paddyWeedClassificationModel-CNNModelTraining.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/paddyWeedClassificationModel-dataPreProcessing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/paddyWeedClassificationModel-modelTesting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/paddyWeedDetectionModelCNN.model" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/paddyWeedDetectorModelWithArch.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Final-Data-Science-Model/y.pickle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1bLnJHSd62nNfbhC67NH1r64LwK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ae75559-1048-4ca0-b7ba-1ebed41388d8" name="Default Changelist" comment="" />
+      <created>1588420167714</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588420167714</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2381" y="182" key="SettingsEditor" timestamp="1588420196183">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2381" y="182" key="SettingsEditor/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588420196183" />
+  </component>
+</project>
