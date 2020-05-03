@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5ae75559-1048-4ca0-b7ba-1ebed41388d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/api1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/upload/api1/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +21,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Data-Science-Part" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SvnConfiguration">
@@ -44,9 +43,10 @@
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1588435456095" />
     <state x="2606" y="234" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588487524923" />
-    <state x="2381" y="182" key="SettingsEditor" timestamp="1588425373242">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="369" y="146" key="SettingsEditor" timestamp="1588521321694">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="369" y="146" key="SettingsEditor/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1588521321694" />
     <state x="2381" y="182" key="SettingsEditor/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588425373242" />
   </component>
 </project>
