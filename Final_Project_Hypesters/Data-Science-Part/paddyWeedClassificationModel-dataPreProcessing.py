@@ -35,7 +35,7 @@ def create_training_data():
         path = os.path.join(DATA_DIRECTORY, category)  # create path to paddy and weed
         class_num = CATEGORIES.index(category)  # get the classification  (0 or a 1). 0=paddy 1=weed
 
-        for image in tqdm(os.listdir(path)):  # iterate over each image per dogs and cats
+        for image in tqdm(os.listdir(path)):  # iterate over each image per paddy and weed
             try:
                 image_array = cv2.imread(os.path.join(path, image), cv2.IMREAD_GRAYSCALE)  # convert to array
                 image_array_2 = cv2.resize(image_array, (IMAGE_SIZE, IMAGE_SIZE))  # resize to normalize data size
@@ -69,7 +69,7 @@ X = np.array(X).reshape(-1, IMAGE_SIZE, IMAGE_SIZE, 1)
 
 y = np.array(y)
 
-import pickle #saving the processed data inside a picle
+import pickle #saving the processed data inside a pickle
 
 pickle_out = open("X.pickle","wb")
 pickle.dump(X, pickle_out)
@@ -79,10 +79,3 @@ pickle_out = open("y.pickle","wb")
 pickle.dump(y, pickle_out)
 pickle_out.close()
 
-#remember to remove
-
-# pickle_in = open("X.pickle","rb")
-# X = pickle.load(pickle_in)
-#
-# pickle_in = open("y.pickle","rb")
-# y = pickle.load(pickle_in)

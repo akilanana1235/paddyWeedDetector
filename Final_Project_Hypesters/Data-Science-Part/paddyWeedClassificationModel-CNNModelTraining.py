@@ -8,10 +8,6 @@ import time
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-#NAME = "paddy-vs-weed-CNN-{}".format(int(time.time())) #model name
-
-#tensorboard = TensorBoard(log_dir='logs\{}'.format(NAME)) #model training graphs
-
 gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.333)
 sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 
@@ -27,7 +23,6 @@ X = X/255.0 #normalizing the data by scailing, min is 0 and max is 255
 dense_layers = [2]
 layer_sizes = [64, 128]
 conv_layers = [3]
-
 
 for dense_layer in dense_layers:
     for layer_size in layer_sizes:
@@ -49,9 +44,6 @@ for dense_layer in dense_layers:
                 model.add(MaxPooling2D(pool_size=(2, 2)))
 
             model.add(Flatten())  # this converts our 3D feature maps to 1D feature vectors
-
-            # model.add(Dense(64))
-            # model.add(Activation('relu'))
 
             for l in range(dense_layer):
                 model.add(Dense(512))  # dense layer

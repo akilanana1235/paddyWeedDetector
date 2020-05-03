@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ae75559-1048-4ca0-b7ba-1ebed41388d8" name="Default Changelist" comment="" />
+    <list default="true" id="5ae75559-1048-4ca0-b7ba-1ebed41388d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/media/20200502_111315.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data-Science-Part/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data-Science-Part/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data-Science-Part/paddyWeedClassificationModel-CNNModelTraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data-Science-Part/paddyWeedClassificationModel-CNNModelTraining.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data-Science-Part/paddyWeedClassificationModel-dataPreProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data-Science-Part/paddyWeedClassificationModel-dataPreProcessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Paddy Weed Detector - Hypesters Final report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Paddy Weed Detector - Hypesters Final report.docx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +27,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Data-Science-Part" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SvnConfiguration">
@@ -36,9 +44,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2381" y="182" key="SettingsEditor" timestamp="1588420196183">
+    <state x="2606" y="234" key="FileChooserDialogImpl" timestamp="1588487524923">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2381" y="182" key="SettingsEditor/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588420196183" />
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1588435456095" />
+    <state x="2606" y="234" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588487524923" />
+    <state x="2381" y="182" key="SettingsEditor" timestamp="1588425373242">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2381" y="182" key="SettingsEditor/0.0.1536.864/1920.0.1920.1080@1920.0.1920.1080" timestamp="1588425373242" />
   </component>
 </project>
