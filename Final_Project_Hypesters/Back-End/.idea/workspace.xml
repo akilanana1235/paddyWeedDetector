@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ae75559-1048-4ca0-b7ba-1ebed41388d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/media/20200502_111315.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data-Science-Part/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Data-Science-Part/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data-Science-Part/paddyWeedClassificationModel-CNNModelTraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data-Science-Part/paddyWeedClassificationModel-CNNModelTraining.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Data-Science-Part/paddyWeedClassificationModel-dataPreProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Data-Science-Part/paddyWeedClassificationModel-dataPreProcessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Paddy Weed Detector - Hypesters Final report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Paddy Weed Detector - Hypesters Final report.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/api1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/upload/api1/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

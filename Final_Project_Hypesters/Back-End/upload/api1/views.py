@@ -46,10 +46,6 @@ with model_graph.as_default():
 
 IMG_SIZE = 50
 
-
-
-
-
 def index(request):
     context = {'a': 1}
     return render(request, 'index.html', context)

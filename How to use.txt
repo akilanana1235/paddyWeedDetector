@@ -1,0 +1,15 @@
+We are team hypesters and these are the instructions to run our paddy weed classification system.
+
+1.	Open the back-end folder, then open its terminal and install the requirements.txt file using “pip install -r requirements.txt”.
+
+2.	Then after the environment (python 3.6) is setup, in the terminal run Django app as “python manage.py runserver”.
+
+3.	Then open the front-end, open the terminal and install the node modules using “npm install”
+
+4.	Then go to client folder, inside is open the terminal and install the node modules using ‘npm install”.
+
+5.	Then go back to the main folder and open the terminal, then run “npm run dev”.
+
+6.	After that go to the client folder open another folder and then run “npm start”.
+
+So that’s it, enjoy our paddy weed classification system. 
