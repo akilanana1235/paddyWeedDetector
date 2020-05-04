@@ -13,3 +13,5 @@ We are team hypesters and these are the instructions to run our paddy weed class
 6.	After that go to the client folder open another folder and then run “npm start”.
 
 So that’s it, enjoy our paddy weed classification system. 
+
+GitHub Repo Link : - https://github.com/akilanana1235/paddyWeedDetector.git
