@@ -58,7 +58,7 @@ protobuf==3.11.4
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.20
-Pygments==2.6.1
+Pygments==2.7.4
 PyInquirer==1.0.3
 PyJWT==1.7.1
 pymongo==3.9.0
